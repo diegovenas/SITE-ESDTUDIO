@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ff8bb2;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 110px;
+  padding: 0 120px;
+  margin: auto;
+
+  /* background-color: #FF8BB2; */
+}
+
+header > img.logo {
+  width: 200px;
+  height: 80px;
+  margin-left: 10px;
+}
+
+header > input {
+  width: 550px;
+  height: 36px;
+
+  background-color: #ffffff66;
+  border: none;
+  border-radius: 5px;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 650px;
+  height: 36px;
+  border-radius: 5px;
+}
+
+header > nav > li {
+  list-style: none;
+  color: #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+header > div.login {
+  display: flex;
+  justify-content: space-around;
+}
+
+header > div.login > img {
+  width: 30px;
+  height: 30px;
+  margin: 17px;
+}
+
+div.carrossel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 200px;
+  background-color: #fabebe;
+}
+
+div.carrossel > img {
+  width: 200px;
+}
+div.carrossel > img.direita {
+  opacity: 0.6;
+  width: 40px;
+  margin-left: 20px;
+}
+div.carrossel > img.esquerda {
+  opacity: 0.6;
+  rotate: 180deg;
+  width: 40px;
+  margin-right: 20px;
+}
+
+div.filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 43px;
+
+  background-color: rgb(9, 243, 243);
+  padding: 0 120px;
+}
+
+div.filtros > .botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.filtros > .botoes > .botao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 32px;
+  padding: 10px;
+
+  background-color: #ff8bb2;
+  border: none;
+  border-radius: 5px;
+  margin-right: 25px;
+  color: #ffffff;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+div.filtros > .botoes > .botao > img {
+  width: 20px;
+  rotate: 90deg;
+}
+
+div.filtros > input {
+  width: 550px;
+  height: 32px;
+
+  background-color: #ff8bb2;
+  border: none;
+  border-radius: 5px;
+}
+
+main {
+  display: flex;
+  width: 1680px;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin: 12px 120px;
+  gap: 20px;
+}
+
+main > aside {
+  width: 200px;
+  height: 520px;
+  background-color: black;
+}
+
+main > .produtos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1158px;
+  height: 720px;
+  gap: 30px;
+
+  padding-top: 25px;
+  padding-left: 11px;
+  padding-right: 11px;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  border-radius: 30px;
+
+  background-color: white;
+  box-shadow: inset 0px 0px 150px 1px rgb(9, 243, 243);
+}
+
+.card {
+  display: flex;
+  width: 150px;
+  height: 217px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  border-radius: 10px;
+  border: 2px solid rgb(8, 204, 204);
+
+  transition: transform 0.21s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover .adicionaLista {
+  display: block;
+}
+
+.card:hover .comprar {
+  display: block;
+  cursor: pointer;
+}
+
+
+
+.card > img {
+  /* margin-top: -25px; */
+  margin-top: 10px;
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+h3 {
+  text-align: center;
+  width: 95%;
+  margin: 12px auto 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+  border-bottom: 2.5px solid rgb(8, 204, 204);
+}
+
+span.preco {
+  padding: 0px 5px;
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  color: #e96491;
+  margin-top: 1px;
+  border-radius: 3px;
+  /* background-color: rgba(255, 0, 0, 0.733); */
+  /* box-shadow: 5px 5px 19px -7px #000000; */
+
+
+}
+
+.preco > span {
+  font-size: 12px;
+  color: #000000;
+}
+.sessao {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 5px;
+  opacity: 1;
+  /* transition: opacity 0.5s ease-in-out; */
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button.comprar {
+  display: none;
+  background-color: rgb(10, 138, 10);
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  animation: fadeIn 0.6s
+}
+
+
+/* 
+button#btn {
+  position: absolute;
+  top: 500px;
+  width: 100px;
+  height: 100px;
+  left: 0px;
+} */
+
+.adicionaLista {
+  position: absolute;
+  inset: -15px 0px 0px 130px;
+  display: none;
+  animation: fadeIn 1s, pulsar 1s infinite;
+}
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.adicionaLista > img {
+  /* border: 1px solid red; */
+  padding: 5px;
+  width: 35px;
+  transition: transform 0.3s ease;
+}
+.adicionaLista > img:hover {
+  transform: scale(1.2);
+}
+
+
+
