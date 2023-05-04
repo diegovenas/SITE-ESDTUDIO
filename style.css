@@ -149,7 +149,7 @@ main {
   gap: 20px;
 }
 aside{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
   /* justify-content: space-around; */
   /* gap: 15px; */
@@ -163,7 +163,7 @@ aside{
 }
 
 main > aside.filtros {
-  margin-top: 20px;
+  /* margin-top: 200px; */
   display: flex;
   /* justify-content: space-around; */
   /* gap: 15px; */
@@ -171,9 +171,22 @@ main > aside.filtros {
   align-items: center;
   flex-direction: column;
   width: 200px;
-  height: 300px;
+  height: 340px;
   background-color: rgb(253, 253, 253);
   box-shadow: inset 0px 0px 85px 1px rgb(9, 243, 243);
+}
+
+main > aside.filtros h2{
+  width: 95%;
+  border-radius: 13px 13px 0 0;
+  background-color: #056785a6;
+  color: rgb(243, 238, 238);
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family:  Arial, sans-serif;
+  letter-spacing:4px;
+  
 }
 
 main > aside > .tipos {
@@ -194,19 +207,20 @@ main > aside > .tipos {
 
 main > aside > .tiposLimpar {
   margin: auto;
-  width: 60px;
-  height: 40px;
+  width: 40px;
+  height: 30px;
   background-color: #ffffff9d;
-  border-radius: 10px;
+  border-radius: 2px;
   color: red;
 
   border: 1px solid rgba(0, 0, 0, 0.151);
   box-shadow: 0px 7px 10px -6px rgba(0, 0, 0, 0.205);
 
   font-family: Arial, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
+
 main > aside > .tiposLimpar p{
   margin-top:-7px ;
 }
@@ -226,12 +240,17 @@ main > .produtos {
   padding-left: 11px;
   padding-right: 11px;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  overflow:auto;
+  scrollbar-width:28px;
+  
+  
   border-radius: 13px;
 
   background-color: white;
   box-shadow: inset 0px 0px 150px 1px rgb(9, 243, 243);
+  
 }
+
 
 .card {
   box-shadow: 7px 7px 10px -6px rgba(0, 0, 0, 0.205);
