@@ -148,7 +148,7 @@ main {
   margin: 12px 120px;
   gap: 20px;
 }
-aside{
+aside {
   /* margin-top: 20px; */
   display: flex;
   /* justify-content: space-around; */
@@ -176,7 +176,7 @@ main > aside.filtros {
   box-shadow: inset 0px 0px 85px 1px rgb(9, 243, 243);
 }
 
-main > aside.filtros h2{
+main > aside.filtros h2 {
   width: 95%;
   border-radius: 13px 13px 0 0;
   background-color: #056785a6;
@@ -184,9 +184,8 @@ main > aside.filtros h2{
   text-align: center;
   margin-bottom: 5px;
   margin-top: 5px;
-  font-family:  Arial, sans-serif;
-  letter-spacing:4px;
-  
+  font-family: Arial, sans-serif;
+  letter-spacing: 4px;
 }
 
 main > aside > .tipos {
@@ -221,8 +220,8 @@ main > aside > .tiposLimpar {
   text-align: center;
 }
 
-main > aside > .tiposLimpar p{
-  margin-top:-7px ;
+main > aside > .tiposLimpar p {
+  margin-top: -7px;
 }
 
 main > .produtos {
@@ -240,19 +239,29 @@ main > .produtos {
   padding-left: 11px;
   padding-right: 11px;
   flex-wrap: wrap;
-  overflow:auto;
-  scrollbar-width:28px;
-  
-  
+  overflow: auto;
+  scrollbar-width: 28px;
+
   border-radius: 13px;
 
   background-color: white;
   box-shadow: inset 0px 0px 150px 1px rgb(9, 243, 243);
-  
 }
 
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #6e6ea9b2;
+}
+html ::-webkit-scrollbar-track {
+  background: #ededed00;
+  border-radius: 20px;
+  margin: 10px;
+}
 
-.card {
+div.produtos > .card {
   box-shadow: 7px 7px 10px -6px rgba(0, 0, 0, 0.205);
   display: flex;
   width: 150px;
@@ -262,31 +271,28 @@ main > .produtos {
   position: relative;
   /* background-color: rgb(253, 253, 253); */
 
-
   border-radius: 10px;
   border: 2px solid rgba(8, 204, 204, 0.267);
 
   transition: transform 0.21s ease;
 }
 
-.card:hover {
+div.produtos > .card:hover {
   transform: scale(1.05);
   background-color: rgb(253, 253, 253);
   border: 2px solid rgb(8, 204, 204);
-
-
 }
 
-.card:hover .adicionaLista {
+div.produtos > .card:hover .adicionaLista {
   display: block;
 }
 
-.card:hover .comprar {
+div.produtos > .card:hover .comprar {
   display: block;
   cursor: pointer;
 }
 
-.card > img {
+div.produtos > .card > img {
   /* margin-top: -25px; */
   margin-top: 10px;
   width: 120px;
@@ -396,4 +402,91 @@ button#btn {
 }
 .adicionaLista > img:hover {
   transform: scale(1.2);
+}
+
+html {
+  position: relative;
+}
+
+div.modal {
+  display: none;
+  justify-content: center;
+
+  align-items: center;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.cardModal {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  height: 700px;
+  background-color: #ffffff;
+  box-shadow: inset 0px 0px 150px 1px rgb(9, 243, 243);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+div.cardModal > div.imagemModal{
+  width: 400px; height: 500px;
+  border: 1px solid green;
+}
+
+div.cardModal > div.descModal{
+/* justify-content: space-between; */
+  padding: 10px;
+  width: 565px; height: 670px;
+  /* background-color: #0bc442; */
+  /* border: 1px solid green; */
+}
+
+
+.headerModal > h2{
+  font-size: 45px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; 
+}
+
+
+.itens{
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #5fad77; */
+  height: 30px;
+  gap: 10px;
+}
+
+.itens>div{
+  /* border: 2px solid red; */
+  /* background-color: #0f8b20; */
+  width:100px ;
+}
+
+.modalPreço{
+  color: red;
+
+  /* border: 2px solid #0f688b; */
+  font-size: 45px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;   
+  height: 70px ;
+}
+
+.modalPreço > h2 > span{
+  font-size: 40px;
+  color: green ;
+
+}
+
+.textoCaixa{
+  width: 550px; height: 450px;
+  /* background-color: #23b6bb; */
+  border: 2px solid  #23b6bb ;
+  padding: 10px;
 }

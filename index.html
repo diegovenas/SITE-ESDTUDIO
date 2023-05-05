@@ -61,6 +61,34 @@
       <input type="text" />
     </div>
 
+<div class="modal">
+  <div class="cardModal">
+    <div class="imagemModal">PRODUTO</div>
+    <div class="descModal">     
+      <div class="headerModal">
+        <h2>Caixa pitamide Toy Store</h2>
+        <div class="itens">
+          <div>Estrela</div>
+          <div>Avaliação</div>
+          <div>Vendidos</div>
+        </div>
+        <div class="modalPreço"><h2><span>R$ </span>4,99</h2></div>
+        <div class="quantidadeModal">
+          quantidade
+        </div>
+       
+      </div>
+      <button onclick="closeModal()">Comprar agr</button>
+      <button>Adicionar ao carrinho</button>
+    <div class="textoCaixa"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non accusamus minima, libero molestiae harum nisi illum, est sequi laudantium iste mollitia! Quae, blanditiis! Illum, itaque dicta fuga saepe autem rem!LoremLorem ipsum, dolor sit amet consectetur adipisicing elit. Non accusamus minima, libero molestiae harum nisi illum, est sequi laudantium iste mollitia! Quae, blanditiis! Illum, itaque dicta fuga saepe autem rem!LoremLorem ipsum, dolor sit amet consectetur adipisicing elit. Non accusamus minima, libero molestiae harum nisi illum, est sequi laudantium iste mollitia! Quae, blanditiis! Illum, itaque dicta fuga saepe autem rem!LoremLorem ipsum, dolor sit amet consectetur adipisicing elit. Non accusamus minima, libero molestiae harum nisi illum, est sequi laudantium iste mollitia! Quae, blanditiis! Illum, itaque dicta fuga saepe autem rem!LoremLorem ipsum, dolor sit amet consectetur adipisicing elit. Non accusamus minima, libero molestiae harum nisi illum, est sequi laudantium iste mollitia! Quae, blanditiis! Illum, itaque dicta fuga saepe autem rem!LoremLorem ipsum, dolor sit amet consectetur adipisicing elit. Non accusamus minima, libero molestiae harum nisi illum, est sequi laudantium iste mollitia! Quae, blanditiis! Illum, itaque dicta fuga saepe autem rem!Lorem</p></div>
+
+    </div>
+
+
+
+  </div>
+</div>
+
     <main>
       
       <aside class="filtros">
@@ -75,7 +103,7 @@
       </aside>
 
       <div class="produtos">
-        <div class="card">
+        <div class="card" onclick="openModal()">
           <img src="images/toy.jpg" alt="" />
           <h3>Toy Story</h3>
           <span class="preco"><span>R$</span> 3,50 </span>
@@ -86,7 +114,7 @@
             <button class="comprar">Comprar</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal()">
           <img src="images/toy.jpg" alt="" />
           <h3>Toy Story</h3>
           <span class="preco"><span>R$</span> 3,50 </span>
@@ -540,7 +568,8 @@
       </div>
     </main>
 
-    <button id="btn">Mostrar card</button>
+    <button id="btn" onclick="openModal()">Mostrar card</button>
+
     <script src="index.js"></script>
   </body>
 </html>
