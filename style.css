@@ -148,19 +148,6 @@ main {
   margin: 12px 120px;
   gap: 20px;
 }
-aside {
-  /* margin-top: 20px; */
-  display: flex;
-  /* justify-content: space-around; */
-  /* gap: 15px; */
-  border-radius: 13px;
-  align-items: center;
-  flex-direction: column;
-  width: 200px;
-  height: 300px;
-  /* background-color: rgb(54, 212, 94);
-  box-shadow: inset 0px 0px 85px 1px rgb(255, 255, 255); */
-}
 
 main > aside.filtros {
   /* margin-top: 200px; */
@@ -190,8 +177,8 @@ main > aside.filtros h2 {
 
 main > aside > .tipos {
   margin: auto;
-  width: 170px;
-  height: 50px;
+  width: 150px;
+  height: 40px;
   background-color: #ffffff9d;
   border-radius: 5px;
   color: gray;
@@ -434,28 +421,27 @@ div.cardModal {
   padding: 15px;
 }
 
-
-div.cardModal > div.imagemModal{
-  width: 400px; height: 500px;
+div.cardModal > div.imagemModal {
+  width: 400px;
+  height: 500px;
   border: 1px solid green;
 }
 
-div.cardModal > div.descModal{
-/* justify-content: space-between; */
+div.cardModal > div.descModal {
+  /* justify-content: space-between; */
   padding: 10px;
-  width: 565px; height: 670px;
+  width: 565px;
+  height: 670px;
   /* background-color: #0bc442; */
   /* border: 1px solid green; */
 }
 
-
-.headerModal > h2{
+.headerModal > h2 {
   font-size: 45px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; 
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-
-.itens{
+.itens {
   display: flex;
   justify-content: space-between;
   /* background-color: #5fad77; */
@@ -463,30 +449,147 @@ div.cardModal > div.descModal{
   gap: 10px;
 }
 
-.itens>div{
+.itens > div {
   /* border: 2px solid red; */
   /* background-color: #0f8b20; */
-  width:100px ;
+  width: 100px;
 }
 
-.modalPreço{
+.modalPreço {
   color: red;
 
   /* border: 2px solid #0f688b; */
   font-size: 45px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;   
-  height: 70px ;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 70px;
 }
 
-.modalPreço > h2 > span{
+.modalPreço > h2 > span {
   font-size: 40px;
-  color: green ;
-
+  color: green;
 }
 
-.textoCaixa{
-  width: 550px; height: 450px;
+.textoCaixa {
+  width: 550px;
+  height: 450px;
   /* background-color: #23b6bb; */
-  border: 2px solid  #23b6bb ;
+  border: 2px solid #23b6bb;
   padding: 10px;
 }
+
+.carrinhoCompra {
+  display: flex;
+
+  border-radius: 13px;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  max-height: 700px;
+  background-color: rgb(253, 253, 253);
+  box-shadow: inset 0px 0px 85px 1px rgb(9, 243, 243);
+}
+
+.carrinhoCompra > h2 {
+  width: 95%;
+  border-radius: 13px 13px 0 0;
+  background-color: #056785a6;
+  color: rgb(243, 238, 238);
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 4px;
+}
+
+.carrinhoCompra > div {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 10px;
+  width: 95%;
+  height: 120px;
+  background-color: #ffffff9d;
+  border-radius: 5px;
+  color: gray;
+
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  box-shadow: 0px 7px 10px -6px rgba(0, 0, 0, 0.205);
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.carrinhoCompra > div > img {
+  /* margin-left: 10px; */
+  width: 85px;
+  height: 95px;
+  border-radius: 5px;
+  /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); */
+}
+
+.infoCarrinho {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  /* border: 1px solid red; */
+  min-width:180px ;
+  height: 90px;
+  margin-left: 10px;
+}
+
+
+.nomeCarrinho {
+  font-size: 19px;
+  color: #000000;
+  /* border: 1px solid red; */
+}
+
+.infoCarrinho > h4{
+  /* margin-top: 10px; */
+  font-size:18px;
+  color: green;
+}
+
+.infoCarrinho > h4 > span{
+  font-size: 14px;
+}
+
+.quantidade{
+  width: 120px;
+  height: 24px;
+  background-color: #0e83b160;
+  /* border: 1px solid slateblue; */
+  border-radius: 3px;
+}
+
+.quantidadeTotal{
+  margin-top:90px;
+  margin-left: 23px;
+  width: 110px;
+  height: 20px;
+  background-color: #6b6b6b60;
+  /* border: 1px solid slateblue; */
+  border-radius: 1px;
+  font-size: 13px;
+}
+
+.enviarPedido{
+  width:120px ;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: greenyellow;
+  box-shadow: 0px 7px 10px -6px rgba(0, 0, 0, 0.205);
+  margin-top: 50px;
+}
+.enviarPedido:hover{
+  cursor: pointer;
+  background-color: rgb(161, 248, 30);
+  
+}
+
