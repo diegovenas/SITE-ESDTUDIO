@@ -4,5 +4,5 @@ function openModal() {
 }
 function closeModal() {
   document.querySelector(".modal").style.display = "none";
-  // console.log('ooi')
+  // console.log('wooi')
 }
